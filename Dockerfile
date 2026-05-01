@@ -43,7 +43,6 @@ RUN set -eux; \
 	mkdir -p var/cache var/log var/share; \
 	composer dump-autoload --classmap-authoritative --no-dev; \
 	composer dump-env prod; \
-	php bin/console assets:install public --no-debug; \
 	chmod +x bin/console; \
 	sync
 
